@@ -2,7 +2,7 @@
 
 setwd("C:/Users/DELL/Desktop/Data Science Curso/R_Programming/specdata/specdata")
 
-pollutantmean <- function(id, pollutant = "nitrate"){
+pollutantmean <- function(id = 1:332, pollutant = "nitrate"){
   files <- list.files()[id]
   dframe = data.frame()
   for (i in files) {
